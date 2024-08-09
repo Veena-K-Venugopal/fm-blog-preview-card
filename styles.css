@@ -1,0 +1,96 @@
+/*Custom Properties*/
+:root {
+    --gray-500: hsl(0, 0%, 42%);
+    --gray-950: hsl(0, 0%, 7%);
+    --color-yellow: hsl(47, 88%, 63%)
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Figtree", sans-serif;
+}
+
+body {
+    background-color: var(--color-yellow);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.blog-card {
+    background-color: hsl(0, 0%, 100%);
+    max-width: 384px;
+    max-height: auto;
+    border: 1px solid var(--gray-950);
+    border-radius: 20px;
+    box-shadow: 8px 8px;
+}
+
+.card-image img {
+    display: block;
+    height: auto;
+    border-radius: 10px;
+    margin: 24px 24px;
+}
+.card-text {
+    margin: 24px 24px;
+}
+
+.text-spacing {
+    line-height: 150%;
+    letter-spacing: 0;
+}
+
+.category {
+    padding: 4px 12px;
+    border-radius: 4px;
+    background-color: var(--color-yellow);
+    display: inline-block;
+    font-size: .875rem;
+    font-weight: 800;
+    color: var(--gray-950);
+}
+
+.publish-date {
+    margin-top: 12px;
+    color: var(--gray-950);
+    font-size: .875rem;
+    font-weight: 500;
+}
+
+.card-title {
+    margin-top: 12px;
+    font-size: 1.5rem;
+    font-weight: 800;
+}
+
+.card-description {
+    margin-top: 12px;
+    color: var(--gray-500);
+    font-weight: 500;
+}
+
+.author {
+    margin: 24px 24px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.author-photo {
+    width: 32px;
+    height: 32px;
+}
+
+.author-photo img {
+    width: 100%;
+}
+
+.author-name {
+    color: var(--gray-950);
+    font-weight: 800;
+    font-size: .875rem;
+}
