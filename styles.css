@@ -73,6 +73,11 @@ body {
     font-weight: 800;
 }
 
+.card-title:hover {
+    color: var(--color-yellow);
+    cursor: pointer;
+}
+
 .card-description {
     margin-top: 12px;
     color: var(--gray-500);
