@@ -22,19 +22,24 @@ body {
 
 .blog-card {
     background-color: hsl(0, 0%, 100%);
-    max-width: 384px;
-    max-height: auto;
+    max-width: 327px;
+    height: auto;
     border: 1px solid var(--gray-950);
     border-radius: 20px;
     box-shadow: 8px 8px;
 }
 
+.card-image {
+    width: 279px;
+    height: 200px;
+}
+
 .card-image img {
-    display: block;
-    height: auto;
+    width: 100%;
     border-radius: 10px;
     margin: 24px 24px;
 }
+
 .card-text {
     margin: 24px 24px;
 }
@@ -93,4 +98,15 @@ body {
     color: var(--gray-950);
     font-weight: 800;
     font-size: .875rem;
+}
+
+@media screen and (min-width: 480px) {
+    .blog-card {
+        max-width: 384px;
+    }
+    
+    .card-image {
+        width: 336px;
+        height: 200px;
+    }    
 }
